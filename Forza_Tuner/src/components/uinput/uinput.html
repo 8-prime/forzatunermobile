@@ -1,0 +1,48 @@
+<!-- Generated template for the UinputComponent component -->
+
+<div >
+  <form class="main">
+    <div class="input-div">
+      <label class="large-label" *ngIf="render" for="wd">Weight Distribtion</label>
+      <input class="input" *ngIf="render" type="number" name="wd" [(ngModel)]="wd" placeholder="50">
+    </div>
+
+    <div class="input-div">
+      <label class="large-label">Anti-Roll Bars</label>
+      <input class="input" *ngIf="render" type="number" name="armin" [(ngModel)]="armin" placeholder="1">
+      <input class="input" *ngIf="render" type="number" name="armax" [(ngModel)]="armax" placeholder="65">
+      <div class="spacer" *ngIf="!render"></div>
+      <label *ngIf="!render">Front: {{anti_roll_front}}</label>
+      <label *ngIf="!render">Back: {{anti_roll_back}}</label>
+      <div class="spacer" *ngIf="!render"></div>
+    </div>
+
+    <div class="input-div">
+      <label class="large-label" >Springs</label>
+      <input class="input" *ngIf="render" type="number" name="springmin" [(ngModel)]="springmin" placeholder="50">
+      <input class="input" *ngIf="render" type="number" name="springmax" [(ngModel)]="springmax" placeholder="230">
+      <div class="spacer" *ngIf="!render"></div>
+      <label *ngIf="!render">Front: {{springs_front}}</label>
+      <label *ngIf="!render">Back: {{springs_back}}</label>
+      <div class="spacer" *ngIf="!render"></div>
+    </div>
+
+    <div class="input-div">
+      <label class="large-label" >Shocks</label>
+      <input class="input" *ngIf="render" type="number" name="shocksmin" [(ngModel)]="shocksmin" placeholder="3">
+      <input class="input" *ngIf="render" type="number" name="shocksmax" [(ngModel)]="shocksmax" placeholder="20">
+      <div class="spacer" *ngIf="!render"></div>
+      <label *ngIf="!render">Front: {{shocks_rebound_front}}</label>
+      <label *ngIf="!render">Back: {{shocks_rebound_back}}</label>
+      <div class="spacer" *ngIf="!render"></div>
+    </div>
+
+
+  </form>
+    <div class="input-div">
+      <button class="myButtonSmall" ion-button color="secondary" *ngIf="render" (click)="useDefault()">Use default values</button>
+      <button class="myButton" ion-button color="secondary" *ngIf="render" (click)="onClick()">Tune dat shizzle</button>
+
+      <button class="myButton" ion-button color="secondary" *ngIf="!render" (click)="reset()">New Tune</button>
+    </div>
+</div>

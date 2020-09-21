@@ -1,0 +1,7 @@
+{
+  "name": "Forza_Tuner",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "ionic-angular"
+}

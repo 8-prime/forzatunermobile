@@ -1,43 +1,12 @@
 <ion-header color = "primary">
   <ion-navbar>
-    <ion-title>
+    <ion-title color="secondary">
       Forza Tuner
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding color="primary">
-  <!--
-
-    <p>The World is your {{text}}</p>
-    <ion-input name="testinput" #test></ion-input>
-    <ion-input name="testinput" #test2></ion-input>
-    <button ion-button color="secondary" (click)="onChangeText(test, test2)" >Change Text</button>
-
-  -->
-
-  <div >
-    <ion-label>Weight distribution</ion-label>
-    <ion-input #wd></ion-input>
-  </div>
-  <p *ngIf="showTune" >Front: {{anti_roll_front}}</p>
-  <p *ngIf="showTune" >Back: {{anti_roll_back}}</p>
-
-
-
-  <ion-label>Anti-Roll Bars</ion-label>
-  <ion-input *ngIf="!showTune" #armin></ion-input>
-  <ion-input *ngIf="!showTune" #armax></ion-input>
-
-  <ion-label>Springs</ion-label>
-  <ion-input *ngIf="!showTune" #springmin></ion-input>
-  <ion-input *ngIf="!showTune" #springmax></ion-input>
-
-  <ion-label>Shocks</ion-label>
-  <ion-input *ngIf="!showTune" #shocksmin></ion-input>
-  <ion-input *ngIf="!showTune" #shocksmax></ion-input>
-
-  <button ion-button color="secondary" (click)="onChangeText(wd, wd)" >click me</button>
-  <!-- <button ion-button color="secondary" (click)="runScript(wd, armin, armax, springmin, springmax, shocksmin, shocksmax)">Tune dat shit</button> -->
-
+  <!-- index will load app app will load home and or others and home will host all of our components and shit-->
+  <uinput></uinput>
 </ion-content>
