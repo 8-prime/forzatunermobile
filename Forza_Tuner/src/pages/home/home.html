@@ -8,5 +8,7 @@
 
 <ion-content padding color="primary">
   <!-- index will load app app will load home and or others and home will host all of our components and shit-->
-  <uinput></uinput>
+  <uinput *ngIf="page == '1'"></uinput>
+  <label *ngIf="page == '2'">Hallo</label>
+  <button (click)="switcher()"></button>
 </ion-content>

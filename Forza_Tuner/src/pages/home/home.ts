@@ -8,4 +8,10 @@ import { NavController } from 'ionic-angular';
 export class HomePage {
   constructor(public navCtrl: NavController) {
   }
+
+  page = '1';
+
+  switcher(){
+    this.page = '2';
+  }
 }
