@@ -8,12 +8,14 @@ import { FormsModule} from '@angular/forms'
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { UinputComponent } from '../components/uinput/uinput';
+import { OlympComponent} from '../components/olymp/olymp'
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    UinputComponent
+    UinputComponent,
+    OlympComponent
   ],
   imports: [
     BrowserModule,

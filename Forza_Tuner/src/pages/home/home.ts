@@ -8,10 +8,11 @@ import { NavController } from 'ionic-angular';
 export class HomePage {
   constructor(public navCtrl: NavController) {
   }
+  //the default page to be loaded is gonna be the tuning page
+  page = 'tune';
 
-  page = '1';
 
-  switcher(){
-    this.page = '2';
+  switcher(swith_to){
+    this.page = swith_to;
   }
 }

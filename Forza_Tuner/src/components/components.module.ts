@@ -1,8 +1,6 @@
 import { NgModule } from '@angular/core';
 import { UinputComponent } from './uinput/uinput';
+import { OlympComponent } from './olymp/olymp';
 @NgModule({
-	declarations: [UinputComponent],
-	imports: [],
-	exports: [UinputComponent]
 })
 export class ComponentsModule {}
